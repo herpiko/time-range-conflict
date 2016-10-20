@@ -1,0 +1,32 @@
+{
+  "name": "trc-checker",
+  "version": "1.0.0",
+  "description": "Time range conflict checker",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.15.1"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herpiko/trc-checker.git"
+  },
+  "keywords": [
+    "time",
+    "time",
+    "range",
+    "moment"
+  ],
+  "author": "Herpiko Dwi Aguno <herpiko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herpiko/trc-checker/issues"
+  },
+  "homepage": "https://github.com/herpiko/trc-checker#readme"
+}
