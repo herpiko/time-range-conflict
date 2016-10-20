@@ -1,6 +1,6 @@
 # time-range-conflict
 
-Time range conflict checker
+Time range conflict checker.
 
 ### Usage
 
@@ -8,26 +8,26 @@ Time range conflict checker
 const isConflict = require('time-range-conflict');
 const moment = require('moment');
 let x = {
-  start : moment(),
-  end : moment(),
+  start : moment().set(1, 'minutes'),
+  end : moment().set(5, 'minutes')
 }
 let y = {
-  start : moment(),
-  end : moment(),
+  start : moment().set(3, 'minutes'),
+  end : moment().set(7, 'minutes'),
 }
 
 console.log(isConflict(x,y)); // Should be true
 
-x = {
-  start : moment(),
-  end : moment(),
+let x = {
+  start : moment().set(1, 'minutes'),
+  end : moment().set(5, 'minutes')
 }
-y = {
-  start : moment(),
-  end : moment(),
+let y = {
+  start : moment().set(6, 'minutes'),
+  end : moment().set(9, 'minutes'),
 }
 
-console.log(isConflict(x,y)); // Should be true
+console.log(isConflict(x,y)); // Should be false
 
 ```
 
